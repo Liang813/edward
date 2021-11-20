@@ -18,6 +18,7 @@ sess = tf.InteractiveSession()
 print(norm.logpdf(0.0).eval())
 print(norm.logpdf([0.0]).eval())
 print(norm.logpdf([[0.0]]).eval())
+assert(norm.logpdf([[0.0]]).eval().shape == (1,1))
 print(norm.logpdf(0.0, loc=5).eval())
 print(norm.logpdf(0.0, loc=[5]).eval())
 ## edward with this pull request:
