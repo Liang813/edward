@@ -36,4 +36,4 @@ try:
   ## -13.4189
   ## -13.4189
 except Exception as e:
-  traceback.print_exc(file=open('/script/edward46-buggy.txt','w+'))
+  traceback.print_exc()
